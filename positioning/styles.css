@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: #0dd5c9;
+  display: inline-block; 
+
+}
+/* fixed in view */
+.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* original position is still accounted for.
+  text wraps around origin.  */
+.relative {
+  position: relative;
+  top: 45px;
+  left: 20px;
+}
+/* text flows through and ignores the object */
+.absolute {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+
+}
+
+.container {
+  border-radius: 5px;
+  border-color: #aa1010;
+  background-color: #a20c0c;
+  display: block;
+  /* changing position to relative makes the box relative to what's inside. Changing it to absolute gives the box an absolute height/width */
+  position: absolute;
+  width: 96.5%;
+  height: 50%;
+  top: 10px;
+
+}
