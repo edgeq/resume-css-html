@@ -43,6 +43,10 @@ a:hover {
   background: #283048;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background:  linear-gradient(rgba(207, 217, 223, .2),
+                 rgba(226, 235, 240, .2)),
+   url(https://images.unsplash.com/photo-1486748609709-34286e9eaadb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ed28b73f059a1be7d1665f535e8054&auto=format&fit=crop&w=1500&q=80), fixed;
+   background-position: center;
 }
 
 
@@ -65,6 +69,15 @@ a:hover {
   padding-left: 20px;
   min-height: 175px;
 }
+
+.col-wide  h1{
+  color: black;
+}
+
+.col-wide  h2{
+  color: black;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -87,11 +100,11 @@ a:hover {
   border-radius: 10%;
 }
 
-.hide{
+/* .hide{
   position: sticky;
   top: 1;
   z-index: 0;
-}
+} */
 
 /* Header and Footer
 -------------------------*/
