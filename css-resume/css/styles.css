@@ -78,6 +78,15 @@ a:hover {
   border-radius: 10%;
 }
 
+.btn-link {
+  text-decoration: none;
+  background-color: #63829c;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10%;
+}
+
 .hide{
   position: sticky;
   top: 1;
@@ -119,6 +128,8 @@ footer {
   padding: 10px;
   display: inline-block;
     color: #d6efff;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 /* nav styles */
@@ -139,6 +150,14 @@ nav a {
   font-weight: 700;
   color: #107abe;
 
+}
+
+.form-box {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 60px;
+  width: 50%;
+  margin: auto;
 }
 
 
