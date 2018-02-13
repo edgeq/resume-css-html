@@ -1,68 +1,71 @@
-/* Color Palette
-#2B2D42 - dark blue
-#8D99AE - light blue
-#EDF2F4 - blue/white
-#EF233C - red
-*/
-
 /* Global styles
 -------------------------*/
+
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
+
 h1, h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
+
 h1 {
   font-size: 60px;
 }
+
 h2 {
   font-size: 30px;
   margin-top: 0;
 }
-h3{
+
+h3 {
   margin: 0;
 }
+
 a {
   color: #1ea0f4;
 }
+
 a:hover {
   text-decoration: none;
 }
 
-.header-wrap{
-  background: #283048;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background:  linear-gradient(rgba(207, 217, 223, .2),
-                 rgba(226, 235, 240, .2)),
-   url(https://images.unsplash.com/photo-1486748609709-34286e9eaadb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ed28b73f059a1be7d1665f535e8054&auto=format&fit=crop&w=1500&q=80), fixed;
-   background-position: center;
+.header-wrap {
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(rgba(207, 217, 223, .2), rgba(226, 235, 240, .2)), url(https://images.unsplash.com/photo-1486748609709-34286e9eaadb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ed28b73f059a1be7d1665f535e8054&auto=format&fit=crop&w=1500&q=80), fixed;
+  background-position: center;
 }
-
-
 
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
-
 }
+
 .col-narrow {
   width: 30%;
   float: left;
   min-height: 175px;
 }
+
 .col-wide {
   width: 70%;
   float: left;
@@ -70,15 +73,15 @@ a:hover {
   min-height: 175px;
 }
 
-.col-wide  h1{
+.col-wide h1 {
   color: black;
 }
 
-.col-wide  h2{
+.col-wide h2 {
   color: black;
 }
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -108,10 +111,12 @@ a:hover {
 
 /* Header and Footer
 -------------------------*/
+
 header, footer {
   background: #2B2D42;
   color: #8D99AE
 }
+
 /* header */
 
 header {
@@ -123,9 +128,9 @@ header h1, header h2 {
   color: #EDF2F4;
   margin: 0;
 }
+
 .profile-img {
   border-radius: 50%;
-
 }
 
 .download {
@@ -133,19 +138,23 @@ header h1, header h2 {
   bottom: 0;
   right: 0;
 }
+
 /* footer */
+
 footer {
   text-align: center;
 }
+
 .contact-info a {
   padding: 10px;
   display: inline-block;
-    color: #d6efff;
-    margin: auto;
-    margin-bottom: 2rem;
+  color: #d6efff;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 /* nav styles */
+
 nav {
   text-align: center;
   background: white;
@@ -162,40 +171,73 @@ nav a {
   text-transform: uppercase;
   font-weight: 700;
   color: #107abe;
-
 }
+
+/* ----Form Styles---- */
 
 .form-box {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 60px;
-  width: 50%;
+  width: 66%;
   margin: auto;
 }
 
+input[type=text], select {
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  ;
+}
+
+input[type=email], select {
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 /* Work Experience
 -------------------------*/
+
 .work {
-  background: #4b6cb7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-color: #929d9f;
+  background: #4b6cb7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #929d9f;
 }
-h3 ~ p {
+
+h3~p {
   margin: 0;
 }
 
-
 /* Education
 -------------------------*/
+
 .education {
   background-color: #fff;
-  background-image:
-  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-  linear-gradient(#eee .1em, transparent .1em);
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
   background-size: 100% 1.2em;
 }
-p + h3 {
+
+p+h3 {
   margin-top: 30px
 }
