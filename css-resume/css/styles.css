@@ -60,18 +60,11 @@ a:hover {
   overflow: hidden;
 }
 
-.col-narrow {
-  width: 30%;
-  float: left;
-  min-height: 175px;
+.content-wrap-footer {
+  padding-top: 60px;
+  overflow: hidden;
 }
 
-.col-wide {
-  width: 70%;
-  float: left;
-  padding-left: 20px;
-  min-height: 175px;
-}
 
 .col-wide h1 {
   color: black;
@@ -79,6 +72,10 @@ a:hover {
 
 .col-wide h2 {
   color: black;
+}
+
+.col-wide h2+p {
+  color: white;
 }
 
 .uppercase {
@@ -240,4 +237,71 @@ h3~p {
 
 p+h3 {
   margin-top: 30px
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 175px;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
+  }
+}
+
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px
+  }
+}
+
+@media (max-width: 768) {
+  .form-box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0px;
+    width: 100%;
+    margin: auto 2px;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    ;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea, select {
+    width: 100%;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
 }
