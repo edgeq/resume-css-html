@@ -171,17 +171,16 @@ nav a {
 }
 
 /* ----Form Styles---- */
-
 .form-box {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 60px;
-  width: 66%;
+  width: 90%;
   margin: auto;
 }
 
 input[type=text], select {
-  width: 49%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -191,7 +190,7 @@ input[type=text], select {
 }
 
 input[type=email], select {
-  width: 49%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -208,6 +207,9 @@ textarea, select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+
+
 
 /* Work Experience
 -------------------------*/
@@ -229,11 +231,11 @@ h3~p {
 /* Education
 -------------------------*/
 
-.education {
+/* .education {
   background-color: #fff;
   background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
   background-size: 100% 1.2em;
-}
+} */
 
 p+h3 {
   margin-top: 30px
@@ -254,6 +256,50 @@ p+h3 {
     padding-left: 20px;
     min-height: 175px;
   }
+
+  .form-box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 60px;
+    width: 66%;
+    margin: auto;
+  }
+
+  /* .education {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+  } */
+  input[type=text], select {
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    ;
+  }
+
+  input[type=email], select {
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
 }
 
 @media (max-width: 899px) {
@@ -265,17 +311,11 @@ p+h3 {
   }
 }
 
-@media (max-width: 768) {
-  .form-box {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 0px;
-    width: 100%;
-    margin: auto 2px;
-  }
+@media (max-width: 767) {
+
 
   input[type=text], select {
-    width: 100%;
+    width: 75%;
     /* padding: 12px 20px; */
     margin: 8px 0;
     display: inline-block;
@@ -285,7 +325,7 @@ p+h3 {
   }
 
   input[type=email], select {
-    width: 100%;
+    width: 75%;
     /* padding: 12px 20px; */
     margin: 8px 0;
     display: inline-block;
@@ -294,7 +334,7 @@ p+h3 {
   }
 
   textarea, select {
-    width: 100%;
+    width: 75%;
     /* padding: 12px 20px; */
     margin: 8px 0;
     display: inline-block;
@@ -302,6 +342,7 @@ p+h3 {
     border-radius: 4px;
     box-sizing: border-box;
   }
+
 
 
 }
