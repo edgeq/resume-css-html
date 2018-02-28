@@ -279,6 +279,15 @@ p+h3 {
         transition: all 500ms cubic-bezier(0.765, -0.525, 0.555, 1.570); /* custom */
 }
 
+.card-img:not(:hover) {
+  transform: scale(1);
+  -webkit-transition: all 500ms cubic-bezier(0.765, 0, 0.555, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.765, -0.525, 0.555, 1.570);
+   -moz-transition: all 500ms cubic-bezier(0.765, -0.525, 0.555, 1.570);
+     -o-transition: all 500ms cubic-bezier(0.765, -0.525, 0.555, 1.570);
+        transition: all 500ms cubic-bezier(0.765, -0.525, 0.555, 1.570); /* custom */
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
