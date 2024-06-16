@@ -51,6 +51,14 @@ a:hover {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(rgba(207, 217, 223, .2), rgba(226, 235, 240, .2)), url(https://images.unsplash.com/photo-1486748609709-34286e9eaadb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ed28b73f059a1be7d1665f535e8054&auto=format&fit=crop&w=1500&q=80), fixed;
   background-position: center;
+  padding: 24px;
+}
+
+.header-text__container {
+  background: rgb(96 125 139 / 81%);
+  padding: 16px;
+  border-radius: 16px;
+  max-width: 600px;
 }
 
 .content-wrap {
@@ -58,6 +66,21 @@ a:hover {
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
+}
+
+.content-wrap__header,
+.content-wrap .education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.content-wrap .education {
+  align-items: stretch;
+}
+.grid-item.card {
+  min-height: 200px;
 }
 
 .content-wrap-footer {
@@ -76,6 +99,10 @@ a:hover {
 
 .col-wide h2+p {
   color: white;
+}
+
+.col-wide h4 {
+  margin-block-start: 0;
 }
 
 .uppercase {
@@ -126,14 +153,13 @@ header h1, header h2 {
   margin: 0;
 }
 
-.profile-img {
-  border-radius: 50%;
+.profile-img.col-narrow {
+  width: 200px;
+  height: 200px;
 }
 
-.download {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.profile-text .col-wide {
+  width: unset;
 }
 
 /* footer */
@@ -147,7 +173,6 @@ footer {
   display: inline-block;
   color: #d6efff;
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 /* nav styles */
@@ -228,6 +253,10 @@ h3~p {
   margin: 0;
 }
 
+.work-history__container {
+  display: flex;
+  margin-block: 2rem;
+}
 /* Education
 -------------------------*/
 
@@ -293,13 +322,11 @@ p+h3 {
 @media (min-width: 768px) {
   .col-narrow {
     width: 30%;
-    float: left;
     min-height: 175px;
   }
 
-  .col-wide {
+  .col-wide:not(.profile-text) {
     width: 70%;
-    float: left;
     padding-left: 20px;
     min-height: 175px;
   }
